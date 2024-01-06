@@ -6,7 +6,7 @@ Control flow in Rust involves managing the execution of code based on conditions
 ## if Expressions
 An `if` expression allows conditional branching. It consists of a condition followed by code blocks for true and false outcomes. Optionally, an `else` expression provides an alternative block of code.
 
-```
+```rust
 fn main() {
     let number = 3;
 
@@ -33,7 +33,7 @@ fn main() {
 ## Handling Multiple Conditions with `else if`
 Multiple conditions can be handled using `else if` expressions, providing a series of conditions to check.
 
-```
+```rust
 fn main() {
     let number = 6;
 
@@ -52,7 +52,7 @@ fn main() {
 ## Using `if` in a `let` Statement
 Since `if` is an expression, it can be used in a `let` statement to assign values based on conditions.
 
-```
+```rust
 fn main() {
     // Example 1: Assigning the result of an if expression to a variable
     let condition1 = true;
@@ -73,7 +73,7 @@ Loops in Rust include `loop`, `while`, and `for`. They allow repeated execution 
 ### Repeating Code with `loop`
 The `loop` keyword instructs Rust to execute a block of code indefinitely until explicitly stopped.
 
-```
+```rust
 fn main() {
     loop {
         println!("again!");
@@ -84,7 +84,7 @@ fn main() {
 ### Returning Values from Loops
 A loop can return a value using the `break` keyword. The value is specified after `break` and is then assigned to a variable.
 
-```
+```rust
 fn main() {
     let mut counter = 0;
 
@@ -103,7 +103,7 @@ fn main() {
 ### Loop Labels to Disambiguate Between Multiple Loops
 Loop labels, starting with a single quote, help disambiguate between nested loops. `break` and `continue` can then specify the labeled loop.
 
-```
+```rust
 fn main() {
     let mut count = 0;
     'counting_up: loop {
@@ -130,7 +130,7 @@ fn main() {
 ### Conditional Loops with `while`
 The `while` loop runs code while a condition holds true. The loop exits when the condition becomes false.
 
-```
+```rust
 fn main() {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
@@ -146,7 +146,7 @@ fn main() {
 ### Looping Through a Collection with `for`
 The `for` loop iterates over elements in a collection, providing a concise and safe way to handle repetition.
 
-```
+```rust
 fn main() {
     // Example 1: Countdown using a for loop and range
     for number in (1..4).rev() {

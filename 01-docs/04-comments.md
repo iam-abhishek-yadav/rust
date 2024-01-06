@@ -4,26 +4,26 @@ In Rust, comments are essential for improving code readability. The idiomatic co
 
 ## Single-Line Comment
 - A simple single-line comment.
-```
+```rust
 // hello, world
 ```
 
 ## Multi-Line Comment
-```
+```rust
 // So we’re doing something complicated here, long enough that we need
 // multiple lines of comments to do it! Whew! Hopefully, this comment will
 // explain what’s going on.
 ```
 
 ## End-of-Line Comment
-```
+```rust
 fn main() {
     let lucky_number = 7; // I’m feeling lucky today
 }
 ```
 
 ## Separate Line Comment
-```
+```rust
 fn main() {
     // I’m feeling lucky today
     let lucky_number = 7;

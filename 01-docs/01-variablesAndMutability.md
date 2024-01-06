@@ -7,7 +7,7 @@
 - Immutability is a key feature in Rust that enhances safety and concurrency.
 - Attempting to reassign a value to an immutable variable will result in a compile-time error.
 
-```
+```rust
 fn main() {
     let x = 5;
     println!("The value of x is: {}", x);
@@ -20,7 +20,7 @@ fn main() {
 - To make a variable mutable, use the `mut` keyword before the variable name.
 - Mutable variables can be reassigned to different values.
   
-```
+```rust
 fn main() {
     let mut x = 5;
     println!("The value of x is: {}", x);
@@ -36,7 +36,7 @@ fn main() {
 - They can be declared in any scope, including the global scope.
 - Constants are useful for values needed globally or in multiple parts of the code.
 
-```
+```rust
 const PI: f32 = 3.14;
 ```
 
@@ -46,7 +46,7 @@ const PI: f32 = 3.14;
 - The new variable "shadows" the previous one, and the compiler uses the new variable's value.
 - Shadowing is different from mutability as it allows changing the type of the variable.
 
-```
+```rust
 fn main() {
     let x = 5;
 
