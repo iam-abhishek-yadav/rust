@@ -16,4 +16,12 @@
   ```bash
   cargo check
   ```
+- Build documentation for a project
+  ```bash
+  cargo doc
+  ```
+- Publish a library to crates.io
+  ```bash
+  cargo publish
+  ```
 - Cargo stores the result of the build in the target/debug directory by default, instead of saving it in the same directory as our code.
